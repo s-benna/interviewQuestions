@@ -35,6 +35,6 @@ public class Q03_FibonacciListNumber {
                 System.out.println("Girdiginiz sayi fibonacci dizisinde bulunmaktadir..:" + fibonacci);
 
         }
-    }
+    }//main
 
-}
+}//class

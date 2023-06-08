@@ -23,7 +23,7 @@ public class Q05_ForFlashBack_Q01 {
         String cumle = scan.nextLine().toLowerCase();
 
         System.out.println("Lutfen bir harf giriniz");
-        char harf=scan.next().toLowerCase(). charAt(0);
+        char harf=scan.next().toLowerCase().charAt(0);
 
         int count = 0;
         for (int i = 0; i < cumle.length(); i++) {

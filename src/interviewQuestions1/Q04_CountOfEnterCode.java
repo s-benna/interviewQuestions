@@ -3,31 +3,43 @@ package interviewQuestions1;
 import java.util.Scanner;
 
 public class Q04_CountOfEnterCode {
-        // STRING OLAN PIN kodunuzu kontrol eden bir kod yazınız.
+        // STRING OLAN PIN kodunuzu kontrol eden bir kod yazınız. 3'den fazla yanlis girislerde bloke koyunuz.
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String pin ="said.12345";
-        int girisHakki = 4;
+        public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        String sifre = "ali1234.";
+        int girisSayisi = 3;
 
-        System.out.println("*****Hosgeldiniz*****");
-        while(true){
-            System.out.print("pin kodu giriniz : ");
-            String girilenPin = scan.nextLine();
 
-            if (pin.equals(girilenPin)){
-                System.out.println("basarili giris yaptiniz..:)");
-                break;
-            }else{
-                System.out.println("yanlis giris yaptiniz...");
-                girisHakki--;
-                System.out.println("kalan giris hakkiniz :"  + girisHakki);
-            }if(girisHakki==0){
-                System.out.println("giris hakkiniz kalmadi.. sim kartiniz bloke oldu..");
-                break;
-            }
 
-        }
-    }
 
-}
+            do {
+                System.out.println("Sifrenizi giriniz..");
+                String girisSifre = scan.nextLine();
+                if (sifre.equals(girisSifre)) {
+                    System.out.println("Giris basarili");
+                    break;
+                } else {
+                    System.out.println("Yanlis giris yaptiniz..");
+                    girisSayisi--;
+                    System.out.println(girisSayisi + " hakkiniz kaldi..");
+
+                }if (girisSayisi == 0) {
+                    System.out.println("Kartiniz bloke olmustur.");
+                    break;
+                }
+            }while (true);
+
+
+
+
+
+
+
+
+
+
+
+
+     }//main
+}//class
